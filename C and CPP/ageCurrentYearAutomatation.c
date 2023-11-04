@@ -7,8 +7,8 @@ int calcAge(int age){
     time_t t = time(NULL);
     struct tm tm = *localtime(&t);
     int currentYear = tm.tm_year + 1900;
-	calc = currentYear - age;
-	return calc;
+    calc = currentYear - age;
+    return calc;
 }
 
 int main(){
