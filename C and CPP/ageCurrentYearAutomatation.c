@@ -3,7 +3,7 @@
 #include <time.h>
 
 int calcAge(int age){
-	int calc;
+    int calc;
     time_t t = time(NULL);
     struct tm tm = *localtime(&t);
     int currentYear = tm.tm_year + 1900;
